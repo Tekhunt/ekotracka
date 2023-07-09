@@ -13,7 +13,7 @@ export const Hero = () => {
       <h1 className="mt-40 text-4xl font-bold text-green-500 relative z-10">
         Welcome to Ekotracka
       </h1>
-      <p className="mt-4 text-lg text-blue-500 max-w-3xl relative z-10">
+      <p className="mt-4 text-lg max-w-3xl relative z-10  text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-blue-400">
         Your waste management solution in Lagos. 
         Ekotracka is a leading waste management company dedicated to providing sustainable solutions for effective waste disposal and recycling in Lagos. We are committed to creating a cleaner and greener environment by promoting responsible waste management practices.
       </p>

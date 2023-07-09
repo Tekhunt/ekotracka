@@ -33,13 +33,23 @@ export const NavHeader =  () => {
 
   return (
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div className="flex lg:flex-1 rounded-full">
-  <a href="#" className="-m-1.5 p-1.5">
-    <span className="sr-only">Your Company</span>
-    <Link to='/'> <img className="h-8 w-auto rounded-full" src="https://t3.ftcdn.net/jpg/01/25/03/40/240_F_125034038_vu2IUxKtcdI71hj1QCVdHjkDr3eCHjK3.jpg" alt="" /> </Link>  
-  </a>
-</div>
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div className="flex lg:flex-1 rounded-full">
+          <a href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Your Company</span>
+            <Link to="/">
+              {" "}
+              <img
+                className="h-8 w-auto rounded-full"
+                src="https://t3.ftcdn.net/jpg/01/32/67/54/240_F_132675456_2I1T2Qo0g1fd3o5pUpPv59RUrCH5sbWl.jpg"
+                alt=""
+              />{" "}
+            </Link>
+          </a>
+        </div>
 
         <div className="flex lg:hidden">
           <button
@@ -55,7 +65,10 @@ export const NavHeader =  () => {
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Services
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+              <ChevronDownIcon
+                className="h-5 w-5 flex-none text-gray-400"
+                aria-hidden="true"
+              />
             </Popover.Button>
 
             <Transition
@@ -75,10 +88,16 @@ export const NavHeader =  () => {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon
+                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          aria-hidden="true"
+                        />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -94,7 +113,10 @@ export const NavHeader =  () => {
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      <item.icon
+                        className="h-5 w-5 flex-none text-gray-400"
+                        aria-hidden="true"
+                      />
                       {item.name}
                     </a>
                   ))}
@@ -115,21 +137,30 @@ export const NavHeader =  () => {
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          <Link to='/login'> Login </Link> <span aria-hidden="true">&rarr;</span>
+            <Link to="/login"> Login </Link>{" "}
+            <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        as="div"
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <Link to="/">
+                {" "}
+                <img
+                  className="h-8 w-auto rounded-full"
+                  src="https://t3.ftcdn.net/jpg/01/32/67/54/240_F_132675456_2I1T2Qo0g1fd3o5pUpPv59RUrCH5sbWl.jpg"
+                  alt=""
+                />{" "}
+              </Link>
             </a>
             <button
               type="button"
@@ -149,7 +180,10 @@ export const NavHeader =  () => {
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
-                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
@@ -192,7 +226,7 @@ export const NavHeader =  () => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                 <Link to='/login'> Log in </Link>
+                  <Link to="/login"> Log in </Link>
                 </a>
               </div>
             </div>
@@ -200,5 +234,5 @@ export const NavHeader =  () => {
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }

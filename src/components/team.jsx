@@ -20,7 +20,7 @@ export const Team = () => {
         imageUrl: fola
       },
       {
-        name: 'Ugwolo JohnPaul',
+        name: 'JohnPaul Ugwulo',
         role: 'UI/UX Designer',
         imageUrl: jp
       },

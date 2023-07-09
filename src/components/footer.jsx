@@ -293,7 +293,7 @@ export const Footer = () => {
         © Company 2023. All rights reserved.
 
         <br />
-        Created with by TrailBlazers
+        Created by TrailBlazers
       </p>
     </div>
   </div>
