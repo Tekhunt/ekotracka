@@ -80,7 +80,7 @@ export const NavHeader =  () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 z-50">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
@@ -126,7 +126,7 @@ export const NavHeader =  () => {
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+          <Link to="/about">About </Link>
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
@@ -206,7 +206,7 @@ export const NavHeader =  () => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  <Link to="/about">About </Link>
                 </a>
                 <a
                   href="#"
