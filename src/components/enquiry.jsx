@@ -2,7 +2,7 @@ export const Enquiry = () => {
     return (
       <>
         <h1 className="text-3xl lg:text-4xl text-center  font-bold leading-9 text-gray-800 pb-4">
-          About Ekotracka
+          Contact Ekotracka
         </h1>
         <section className="bg-gray-100">
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
